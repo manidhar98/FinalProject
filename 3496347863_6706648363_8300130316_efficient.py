@@ -1,12 +1,10 @@
 import re
 import sys
 import time
-
 import psutil as psutil
+from Constants import *
+from StringGenerator import *
 
-import Constants;
-from Constants import *;
-from StringGenerator import *;
 
 class MemoryEfficient:
     def alignment(self, X, Y):
@@ -30,6 +28,7 @@ class MemoryEfficient:
         util = Utils()
         return util.reconstruct_sequence_alignment(dp, X, Y)
 
+
 if __name__ == '__main__':
     strings = []
     indices_x = []
@@ -37,7 +36,7 @@ if __name__ == '__main__':
     index = 1
     pattern = re.compile("[A-Za-z]+")
 
-    file = open(sys.argv[1], 'r');
+    file = open(sys.argv[1], 'r')
     data = file.readlines()
     strings.append(data[0].replace("\n", ""))
     check = False

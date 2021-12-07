@@ -39,7 +39,7 @@ if __name__ == '__main__':
     indices_y = []
     index = 1
     pattern = re.compile("[A-Za-z]+")
-    file = open(sys.argv[1], 'r');
+    file = open(sys.argv[1], 'r')
     data = file.readlines()
     strings.append(data[0].replace("\n", ""))
     check = False
@@ -60,7 +60,7 @@ if __name__ == '__main__':
     start = time.process_time()
     min_cost, final_x, final_y = basic.get_minimum_penalty(final[0], final[1])
     start2 = P2.memory_info().rss / 1024
-    file = open('output'+sys.argv[1], 'w')
+    file = open('output.txt', 'w')
     file.writelines(final_x[0:50] + " " + final_x[-50:] + "\n")
     file.writelines(final_y[0:50] + " " + final_y[-50:] + "\n")
     file.writelines(str(float(min_cost)) + "\n")
