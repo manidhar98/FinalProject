@@ -1,0 +1,26 @@
+
+Contributers:
+Manidhar Mulagapaka
+Namrata Naik
+Sameer Khan Mohammad
+
+Contributions 
+
+Coding: Sameer Khan Mohammad, Manidhar Mulagapaka, Namrata Naik
+Testing: Namrata Naik, Sameer Khan Mohammad
+Report preparation: Sameer Khan Mohammad, Manidhar Mulagapaka, Namrata Naik
+Code Version Control: Manidhar Mulagapaka
+
+Summary:
+
+Time Comparision:   
+Time taken by efficient version is higher than the basic version of sequence alignment algorithm. 
+The overhead of recursion for divide and conquer, as well as the overhead for finding y_split_pos for Y string causes the time 
+for efficient algorithm to be little greater than basic version which contains only m*n iterations.
+Therefore, the overhead associated with the efficient algorithm causes the time to be bit greater than the basic version.
+
+
+Memory Comparision:
+the efficient algorithm uses 2*k (k being the size of Y string) array to calculte the minimum sequence alignment for every recursion in 
+divide_and_conquer method. Hence, the max memory allocated will be less than 2*n (n is the max size of string Y).
+Whereas, in case of basic version, the memory allocated is m*n, which causes the memory size to increase exponentially to the input size.
