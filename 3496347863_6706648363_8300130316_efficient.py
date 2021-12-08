@@ -117,19 +117,23 @@ if __name__ == '__main__':
     efficient = MemoryEfficient()
     
     P2 = psutil.Process()
-    start1 = P2.memory_info().rss / 1024
-    start = time.process_time()
+    start_memory = P2.memory_info().rss / 1024
+    start_time = time.process_time()
 
     efficient.divide_conquer_alignment(final[0], final[1])
 
     min_cost, final_x, final_y =  efficient.min_cost, efficient.final_seq_x, efficient.final_seq_y
     
-    start2 = P2.memory_info().rss / 1024
-    
+    end_memory = P2.memory_info().rss / 1024
+    end_time = time.process_time()
+
+    # writing into the file
     file = open('output.txt', 'w')
+
     file.writelines(final_x[0:50]+" "+final_x[-50:]+"\n")
     file.writelines(final_y[0:50]+" "+final_y[-50:]+"\n")
     file.writelines(str(float(min_cost))+"\n")
-    file.writelines(str(time.process_time() - start)+"\n")
-    file.writelines(str(start2-start1))
+    file.writelines(str(end_time - start_time)+"\n")
+    file.writelines(str(end_memory-start_memory))
+
     file.close()
