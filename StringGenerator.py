@@ -10,12 +10,12 @@ class InputGenerator:
         self.X = strings[0]
         self.Y = strings[1]
 
-    def inputStringGenerator(self, str, indices):
-        cummulative = str
+    def inputStringGenerator(self, string, indices):
+        cumulative = string
         for x in indices:
-            s = str[0:x + 1]
-            s = s + cummulative
-            s = s + str[x + 1:len(str)]
-            str = s
-            cummulative = s
-        return str
+            s = string[0:x + 1]
+            s = s + cumulative
+            s = s + string[x + 1:len(string)]
+            string = s
+            cumulative = s
+        return string
