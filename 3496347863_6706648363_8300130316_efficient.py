@@ -2,7 +2,7 @@ import re
 import sys
 import time
 
-import psutil as psutil
+import psutil
 
 import Constants;
 from Constants import *;
