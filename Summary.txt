@@ -14,7 +14,7 @@ Code Version Control: Manidhar Mulagapaka
 Summary:
 
 Algorithm:
-The dynamic programing approach is used in the basic version oif sequence alignment problem.
+The dynamic programming approach is used in the basic version of sequence alignment problem solution.
 
 the combination of divide and conquer, and dynamic programming is used in the efficient version of the sequence alignment algorithm. 
 Here, the problem is divided into subproblems and solve them recursively. In each subproblem, The string X is split into half and 
