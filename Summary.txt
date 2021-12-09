@@ -1,5 +1,5 @@
 
-Contributers:
+Contributors:
 Manidhar Mulagapaka
 Namrata Vasant Naik
 Sameer Khan Mohammad
@@ -18,7 +18,7 @@ The dynamic programing approach is used in the basic version oif sequence alignm
 
 the combination of divide and conquer, and dynamic programming is used in the efficient version of the sequence alignment algorithm. 
 Here, the problem is divided into subproblems and solve them recursively. In each subproblem, The string X is split into half and 
-the position y_split_pos is calcualted by memory efficient version of sequence aligment to split Y string. 
+the position y_split_pos is calculated by memory efficient version of sequence alignment to split Y string.
 finally, the base case is to find out the alignment when length of X and Y is less than or equal to 2.
 
 Complexity:
@@ -50,5 +50,5 @@ Files included:
 3496347863_6706648363_8300130316_efficient.py
 
 Summary.txt
-memory.png
-time.png
+MemoryPlot.png
+CPUPlot.png
