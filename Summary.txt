@@ -40,7 +40,7 @@ Therefore, the overhead associated with the efficient algorithm causes the time 
 Memory Comparison:
 The efficient algorithm uses 2*k (k being the size of Y string) array to calculate the minimum sequence alignment for every recursion in
 divide_and_conquer method. Hence, the max memory allocated will be less than 2*n (n is the max size of string Y).
-Whereas, in case of basic version, the memory allocated is m*n, which causes the memory size to increase exponentially to the input size.
+Whereas, in case of basic version, the memory allocated is m*n, which causes the memory size to increase linearly proportional to the input size.
 
 
 Files included: 
