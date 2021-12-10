@@ -2,9 +2,16 @@ import re
 import sys
 import time
 import psutil as psutil
-from Constants import *
-from StringGenerator import *
+# from Constants import *
+# from StringGenerator import *
 
+import importlib
+string_generator = importlib.import_module('3496347863_6706648363_8300130316_string_generator')
+utils_constants = importlib.import_module('3496347863_6706648363_8300130316_utils_constants')
+
+Constant = utils_constants.Constant
+Utils = utils_constants.Utils
+InputGenerator = string_generator.InputGenerator
 
 class Basic:
 
