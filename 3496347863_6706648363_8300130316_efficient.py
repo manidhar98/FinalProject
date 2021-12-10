@@ -2,8 +2,6 @@ import re
 import sys
 import time
 import psutil
-# from Constants import *
-# from StringGenerator import *
 
 import importlib
 string_generator = importlib.import_module('3496347863_6706648363_8300130316_string_generator')
