@@ -1,12 +1,13 @@
+Summary Project CSCI 570: Algorithms Design Analysis.
 
 Contributors:
-Manidhar Mulagapaka
-Namrata Vasant Naik
-Sameer Khan Mohammad
+Manidhar Mulagapaka (8300130316)
+Namrata Vasant Naik (3496347863)
+Sameer Khan Mohammad (6706648363)
 
 Contributions:
 
-Coding: Sameer Khan Mohammad, Manidhar Mulagapaka, Namrata Vasant Naik
+Coding: Sameer Khan Mohammad(Memory Efficient Version), Manidhar Mulagapaka(String Generator), Namrata Vasant Naik(Basic Version)
 Testing: Namrata Vasant Naik, Sameer Khan Mohammad
 Report preparation: Sameer Khan Mohammad, Manidhar Mulagapaka, Namrata Vasant Naik
 Code Version Control: Manidhar Mulagapaka

@@ -73,7 +73,7 @@ if __name__ == '__main__':
     file.writelines(final_x[0:50] + " " + final_x[-50:] + "\n")
     file.writelines(final_y[0:50] + " " + final_y[-50:] + "\n")
     file.writelines(str(float(min_cost)) + "\n")
-    file.writelines(str(end_time - start_time) + "\n")
-    file.writelines(str(end_memory - start_memory))
+    file.writelines(str(end_memory - start_memory)+"\n")
+    file.writelines(str(end_time - start_time))
     
     file.close()

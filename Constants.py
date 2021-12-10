@@ -42,7 +42,7 @@ class Utils:
             j -= 1
             self.min_cost += Constant.gap_penalty
 
-        return self.min_cost, X1[::-1], Y1[::-1]
+        return dp[len(X)][len(Y)], X1[::-1], Y1[::-1]
 
 
 class Constant:
