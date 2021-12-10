@@ -46,21 +46,7 @@ class MemoryEfficient:
         m = len(X)+1
         n = len(Y)+1
 
-        # print('serving for:', X, Y)
         dp = [[0 for i in range(2)] for i in range(n)]
-
-        # for j in range(n):
-        #     dp[0][j] = j*Constant.gap_penalty
-        #
-        # for i in range(1, m):
-        #     dp[i % 2][0] = i*Constant.gap_penalty
-        #
-        #     for j in range(1, n):
-        #         dp[i % 2][j] = dp[i % 2][j-1] + Constant.gap_penalty
-        #         dp[i % 2][j] = min(dp[i % 2][j], dp[(i-1) % 2][j] + Constant.gap_penalty)
-        #         dp[i % 2][j] = min(dp[i % 2][j], dp[(i-1) % 2][j-1] + Constant.mismatch_cost[Constant.chars[X[i-1]]][Constant.chars[Y[j-1]]])
-        #
-        # return dp[(m-1) % 2]
 
         for i in range(0, n):
             dp[i][0] = i*Constant.gap_penalty

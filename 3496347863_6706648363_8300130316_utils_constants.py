@@ -15,32 +15,27 @@ class Utils:
                 X1 += '_'
                 Y1 += Y[j - 1]
                 j -= 1
-                self.min_cost += Constant.gap_penalty
             elif dp[i][j] == dp[i - 1][j] + Constant.gap_penalty:
                 X1 += X[i - 1]
                 Y1 += '_'
                 i -= 1
-                self.min_cost += Constant.gap_penalty
             else:
                 X1 += X[i - 1]
                 Y1 += Y[j - 1]
                 i -= 1
                 j -= 1
-                self.min_cost += Constant.mismatch_cost[Constant.chars[X[i]]][Constant.chars[Y[j]]]
 
         while i != 0:
             X1 += X[i - 1]
             Y1 += "_"
 
             i -= 1
-            self.min_cost += Constant.gap_penalty
 
         while j != 0:
             Y1 += Y[j - 1]
             X1 += "_"
 
             j -= 1
-            self.min_cost += Constant.gap_penalty
 
         return dp[len(X)][len(Y)], X1[::-1], Y1[::-1]
 
